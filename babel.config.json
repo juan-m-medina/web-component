@@ -1,0 +1,23 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "useBuiltIns": "entry",
+        "corejs": { "version": 3 },
+        "modules": false,
+        "targets": {
+          "browsers": [
+            "Chrome >= 52",
+            "FireFox >= 44",
+            "Safari >= 7",
+            "Explorer 11",
+            "last 4 Edge versions"
+          ]
+        }
+      }
+    ],
+    ["minify", {}]
+  ],
+  "plugins": []
+}

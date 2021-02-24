@@ -1,0 +1,5 @@
+# SAMPLE WEB COMPONENT
+
+## Dependencies
+
+-
