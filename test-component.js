@@ -1,3 +1,5 @@
+import "./node_modules/@webcomponents/webcomponentsjs/webcomponents-bundle.js";
+
 class Content extends HTMLElement {
   constructor() {
     super();
@@ -19,7 +21,7 @@ class Content extends HTMLElement {
   }
 
   connectedCallback() {
-    alert(`I am alive and my id is "${this.id}"`);
+    alert(`I am setup and my id is "${this.id}"`);
     let styleIdPrefix = this._isIE() ? `#${this.id} ` : "";
     this._root.innerHTML = `
         <style>
